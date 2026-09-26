@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1805" width="2000" height="1805" font-family="Arial, Helvetica, sans-serif">
+<!-- Use Case Diagram v1.0. Редаговане джерело; PNG-експорт: docs/docs/images/use-case.png -->
+<rect width="2000" height="1805" fill="#FFFFFF"/>
+<rect x="349" y="22" width="1339" height="1755" rx="8" fill="#FAFBFD" stroke="#1F1F1F" stroke-width="3"/>
+<text x="1018" y="70" text-anchor="middle" font-size="26" font-weight="bold" fill="#1F1F1F">Система управління замовленнями тюнінг-ательє v1.0</text>
+<g stroke="#1F1F1F" stroke-width="2.5" fill="none">
+<line x1="205" y1="1050" x2="530" y2="252"/>
+<line x1="205" y1="1050" x2="635" y2="464"/>
+<line x1="205" y1="1050" x2="705" y2="659"/>
+<line x1="205" y1="1050" x2="695" y2="848"/>
+<line x1="205" y1="1050" x2="570" y2="1007"/>
+<line x1="205" y1="1050" x2="1183" y2="1123"/>
+<line x1="205" y1="1050" x2="1220" y2="1273"/>
+<line x1="205" y1="1050" x2="1260" y2="1434"/>
+<line x1="205" y1="1050" x2="1290" y2="1603"/>
+<line x1="1795" y1="165" x2="1644" y2="172"/>
+<line x1="1795" y1="429" x2="1640" y2="417"/>
+<line x1="1795" y1="1402" x2="1610" y2="1179"/>
+<line x1="1795" y1="1402" x2="1602" y2="1358"/>
+<line x1="1795" y1="1402" x2="1601" y2="1447"/>
+<line x1="1795" y1="1402" x2="1610" y2="1626"/>
+</g>
+<line x1="1177" y1="183" x2="840" y2="183" stroke="#1F1F1F" stroke-width="2.5" stroke-dasharray="12 8"/>
+<polyline points="866,172 840,183 866,194" fill="none" stroke="#1F1F1F" stroke-width="2.5"/>
+<text x="1008" y="168" text-anchor="middle" font-size="23" fill="#1F1F1F">«include»</text>
+<line x1="1250" y1="236" x2="907" y2="347" stroke="#1F1F1F" stroke-width="2.5" stroke-dasharray="12 8"/>
+<polyline points="935,350 907,347 928,328" fill="none" stroke="#1F1F1F" stroke-width="2.5"/>
+<text x="1033" y="263" text-anchor="middle" font-size="23" fill="#1F1F1F">«include»</text>
+<line x1="980" y1="400" x2="1177" y2="400" stroke="#1F1F1F" stroke-width="2.5" stroke-dasharray="12 8"/>
+<polyline points="1151,389 1177,400 1151,411" fill="none" stroke="#1F1F1F" stroke-width="2.5"/>
+<text x="1078" y="385" text-anchor="middle" font-size="23" fill="#1F1F1F">«include»</text>
+<line x1="821" y1="668" x2="824" y2="715" stroke="#1F1F1F" stroke-width="2.5" stroke-dasharray="12 8"/>
+<polyline points="834,689 824,715 811,690" fill="none" stroke="#1F1F1F" stroke-width="2.5"/>
+<text x="900" y="699" text-anchor="middle" font-size="23" fill="#1F1F1F">«extend»</text>
+<line x1="815" y1="861" x2="805" y2="908" stroke="#1F1F1F" stroke-width="2.5" stroke-dasharray="12 8"/>
+<polyline points="821,885 805,908 799,881" fill="none" stroke="#1F1F1F" stroke-width="2.5"/>
+<text x="888" y="892" text-anchor="middle" font-size="23" fill="#1F1F1F">«extend»</text>
+<line x1="971" y1="1027" x2="1231" y2="1094" stroke="#1F1F1F" stroke-width="2.5" stroke-dasharray="12 8"/>
+<polyline points="1209,1077 1231,1094 1203,1099" fill="none" stroke="#1F1F1F" stroke-width="2.5"/>
+<text x="1111" y="1038" text-anchor="middle" font-size="23" fill="#1F1F1F">«include»</text>
+<ellipse cx="605" cy="183" rx="235" ry="73" fill="#E8EDF5" stroke="#1F1F1F" stroke-width="2.5"/>
+<text x="605" y="156" text-anchor="middle" font-size="22" font-weight="bold" fill="#1F4E79">UC-04</text>
+<text x="605" y="189" text-anchor="middle" font-size="25" fill="#1F1F1F">Змінити статус</text>
+<text x="605" y="220" text-anchor="middle" font-size="25" fill="#1F1F1F">замовлення</text>
+<ellipse cx="745" cy="400" rx="235" ry="73" fill="#E8EDF5" stroke="#1F1F1F" stroke-width="2.5"/>
+<text x="745" y="373" text-anchor="middle" font-size="22" font-weight="bold" fill="#1F4E79">UC-09</text>
+<text x="745" y="406" text-anchor="middle" font-size="25" fill="#1F1F1F">Вести облік деталей</text>
+<text x="745" y="437" text-anchor="middle" font-size="25" fill="#1F1F1F">для робіт</text>
+<ellipse cx="815" cy="595" rx="235" ry="73" fill="#E8EDF5" stroke="#1F1F1F" stroke-width="2.5"/>
+<text x="815" y="568" text-anchor="middle" font-size="22" font-weight="bold" fill="#1F4E79">UC-01</text>
+<text x="815" y="601" text-anchor="middle" font-size="25" fill="#1F1F1F">Зареєструвати</text>
+<text x="815" y="632" text-anchor="middle" font-size="25" fill="#1F1F1F">клієнта</text>
+<ellipse cx="830" cy="788" rx="235" ry="73" fill="#E8EDF5" stroke="#1F1F1F" stroke-width="2.5"/>
+<text x="830" y="761" text-anchor="middle" font-size="22" font-weight="bold" fill="#1F4E79">UC-02</text>
+<text x="830" y="794" text-anchor="middle" font-size="25" fill="#1F1F1F">Додати автомобіль</text>
+<text x="830" y="825" text-anchor="middle" font-size="25" fill="#1F1F1F">клієнта</text>
+<ellipse cx="790" cy="981" rx="235" ry="73" fill="#E8EDF5" stroke="#1F1F1F" stroke-width="2.5"/>
+<text x="790" y="954" text-anchor="middle" font-size="22" font-weight="bold" fill="#1F4E79">UC-03</text>
+<text x="790" y="987" text-anchor="middle" font-size="25" fill="#1F1F1F">Оформити</text>
+<text x="790" y="1018" text-anchor="middle" font-size="25" fill="#1F1F1F">замовлення</text>
+<ellipse cx="1412" cy="183" rx="235" ry="73" fill="#E8EDF5" stroke="#1F1F1F" stroke-width="2.5"/>
+<text x="1412" y="156" text-anchor="middle" font-size="22" font-weight="bold" fill="#1F4E79">UC-05</text>
+<text x="1412" y="189" text-anchor="middle" font-size="25" fill="#1F1F1F">Виконати</text>
+<text x="1412" y="220" text-anchor="middle" font-size="25" fill="#1F1F1F">призначену роботу</text>
+<ellipse cx="1412" cy="400" rx="235" ry="73" fill="#E8EDF5" stroke="#1F1F1F" stroke-width="2.5"/>
+<text x="1412" y="373" text-anchor="middle" font-size="22" font-weight="bold" fill="#1F4E79">UC-10</text>
+<text x="1412" y="406" text-anchor="middle" font-size="25" fill="#1F1F1F">Відстежити стан</text>
+<text x="1412" y="437" text-anchor="middle" font-size="25" fill="#1F1F1F">замовлення і деталей</text>
+<ellipse cx="1412" cy="1140" rx="235" ry="73" fill="#E8EDF5" stroke="#1F1F1F" stroke-width="2.5"/>
+<text x="1412" y="1113" text-anchor="middle" font-size="22" font-weight="bold" fill="#1F4E79">UC-11</text>
+<text x="1412" y="1146" text-anchor="middle" font-size="25" fill="#1F1F1F">Переглянути</text>
+<text x="1412" y="1177" text-anchor="middle" font-size="25" fill="#1F1F1F">автомобіль</text>
+<ellipse cx="1412" cy="1315" rx="235" ry="73" fill="#E8EDF5" stroke="#1F1F1F" stroke-width="2.5"/>
+<text x="1412" y="1288" text-anchor="middle" font-size="22" font-weight="bold" fill="#1F4E79">UC-08</text>
+<text x="1412" y="1321" text-anchor="middle" font-size="25" fill="#1F1F1F">Переглянути</text>
+<text x="1412" y="1352" text-anchor="middle" font-size="25" fill="#1F1F1F">клієнта</text>
+<ellipse cx="1412" cy="1490" rx="235" ry="73" fill="#E8EDF5" stroke="#1F1F1F" stroke-width="2.5"/>
+<text x="1412" y="1463" text-anchor="middle" font-size="22" font-weight="bold" fill="#1F4E79">UC-06</text>
+<text x="1412" y="1496" text-anchor="middle" font-size="25" fill="#1F1F1F">Переглянути поточні</text>
+<text x="1412" y="1527" text-anchor="middle" font-size="25" fill="#1F1F1F">замовлення</text>
+<ellipse cx="1412" cy="1665" rx="235" ry="73" fill="#E8EDF5" stroke="#1F1F1F" stroke-width="2.5"/>
+<text x="1412" y="1638" text-anchor="middle" font-size="22" font-weight="bold" fill="#1F4E79">UC-07</text>
+<text x="1412" y="1671" text-anchor="middle" font-size="25" fill="#1F1F1F">Переглянути завершені</text>
+<text x="1412" y="1702" text-anchor="middle" font-size="25" fill="#1F1F1F">замовлення</text>
+<g stroke="#1F1F1F" stroke-width="3" fill="none">
+<circle cx="165" cy="980" r="24" fill="#FFFFFF"/>
+<line x1="165" y1="1004" x2="165" y2="1076"/>
+<line x1="125" y1="1027" x2="205" y2="1027"/>
+<line x1="165" y1="1076" x2="134" y2="1134"/>
+<line x1="165" y1="1076" x2="196" y2="1134"/>
+</g>
+<text x="165" y="1175" text-anchor="middle" font-size="26" font-weight="bold" fill="#1F1F1F">Менеджер</text>
+<g stroke="#1F1F1F" stroke-width="3" fill="none">
+<circle cx="1835" cy="96" r="24" fill="#FFFFFF"/>
+<line x1="1835" y1="120" x2="1835" y2="192"/>
+<line x1="1795" y1="143" x2="1875" y2="143"/>
+<line x1="1835" y1="192" x2="1804" y2="250"/>
+<line x1="1835" y1="192" x2="1866" y2="250"/>
+</g>
+<text x="1835" y="291" text-anchor="middle" font-size="26" font-weight="bold" fill="#1F1F1F">Майстер</text>
+<g stroke="#1F1F1F" stroke-width="3" fill="none">
+<circle cx="1835" cy="360" r="24" fill="#FFFFFF"/>
+<line x1="1835" y1="384" x2="1835" y2="456"/>
+<line x1="1795" y1="407" x2="1875" y2="407"/>
+<line x1="1835" y1="456" x2="1804" y2="514"/>
+<line x1="1835" y1="456" x2="1866" y2="514"/>
+</g>
+<text x="1835" y="555" text-anchor="middle" font-size="26" font-weight="bold" fill="#1F1F1F">Клієнт</text>
+<g stroke="#1F1F1F" stroke-width="3" fill="none">
+<circle cx="1835" cy="1333" r="24" fill="#FFFFFF"/>
+<line x1="1835" y1="1357" x2="1835" y2="1429"/>
+<line x1="1795" y1="1380" x2="1875" y2="1380"/>
+<line x1="1835" y1="1429" x2="1804" y2="1487"/>
+<line x1="1835" y1="1429" x2="1866" y2="1487"/>
+</g>
+<text x="1835" y="1528" text-anchor="middle" font-size="26" font-weight="bold" fill="#1F1F1F">Керівник</text>
+</svg>
