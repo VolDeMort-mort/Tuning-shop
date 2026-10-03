@@ -1,0 +1,42 @@
+@startuml order-state-machine
+!pragma layout smetana
+skinparam dpi 150
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam state {
+  BackgroundColor #EEEEEE
+  BorderColor #1F1F1F
+  ArrowColor #1F1F1F
+}
+hide empty description
+
+state "Нове" as New
+New : додати роботу
+New : змінити чи видалити заплановану роботу
+New : додати деталь до роботи
+New : відмітити надходження деталі
+
+state "В роботі" as InProgress
+InProgress : додати роботу
+InProgress : змінити чи видалити заплановану роботу
+InProgress : додати деталь до роботи
+InProgress : відмітити надходження деталі
+
+state "Готове до видачі" as Ready
+state "Видане" as Issued
+state "Скасоване" as Cancelled
+
+[*] --> New : створити замовлення [є\nхоча б одна робота]
+New --> InProgress : передати в роботу [усім\nроботам призначено\nмайстра]
+InProgress --> Ready : позначити готовим [усі\nроботи «Виконано»]
+Ready --> Issued : видати автомобіль /\nзберегти дату видачі
+New --> Cancelled : скасувати(причина)
+InProgress --> Cancelled : скасувати(причина)
+Issued --> [*]
+Cancelled --> [*]
+
+legend bottom
+  У кожному стані Клієнт може переглянути статус замовлення,
+  прогрес робіт і стан деталей (UC-10, лише перегляд)
+end legend
+@enduml
