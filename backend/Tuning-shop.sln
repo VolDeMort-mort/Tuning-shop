@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35818.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tuning-shop", "Tuning-shop.csproj", "{DA96B374-0718-4453-B964-4242FA2AC153}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA96B374-0718-4453-B964-4242FA2AC153}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA96B374-0718-4453-B964-4242FA2AC153}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA96B374-0718-4453-B964-4242FA2AC153}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA96B374-0718-4453-B964-4242FA2AC153}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1940E49E-A545-4048-9304-D58DF0B9F6B5}
+	EndGlobalSection
+EndGlobal

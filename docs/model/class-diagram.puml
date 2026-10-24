@@ -1,0 +1,139 @@
+@startuml class-diagram
+!pragma layout smetana
+skinparam dpi 150
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam classAttributeIconSize 0
+skinparam class {
+  BackgroundColor #FFFFFF
+  HeaderBackgroundColor #E8EDF5
+  BorderColor #1F1F1F
+  ArrowColor #1F1F1F
+}
+hide circle
+hide empty members
+skinparam class {
+  BackgroundColor<<enumeration>> #FFFFFF
+  HeaderBackgroundColor<<enumeration>> #F2F2F2
+}
+
+class Client {
+  fullName: string
+  phone: string
+  email: string [0..1]
+  --
+  updateContacts(phone, email)
+}
+
+class Car {
+  make: string
+  model: string
+  year: int
+  vin: string
+  plateNumber: string
+  --
+  hasActiveOrder(): bool
+}
+
+class Order {
+  number: string
+  createdAt: datetime
+  clientRequest: string
+  status: OrderStatus
+  issuedAt: datetime [0..1]
+  cancelReason: string [0..1]
+  --
+  addWork(item: WorkItem)
+  startWork()
+  markReady()
+  issue()
+  cancel(reason: string)
+  progress(): string
+  totalEstimate(): decimal
+}
+
+class WorkItem {
+  category: WorkCategory
+  description: string
+  estimatedCost: decimal
+  status: WorkStatus
+  statusChangedAt: datetime
+  --
+  assignMaster(master: Employee)
+  advanceStatus()
+  addPart(part: Part)
+  allPartsReceived(): bool
+}
+
+class Part {
+  name: string
+  quantity: int
+  status: PartStatus
+  expectedAt: date [0..1]
+  receivedAt: datetime [0..1]
+  --
+  markReceived()
+}
+
+class Employee {
+  fullName: string
+  login: string
+  role: Role
+}
+
+class StatusChange {
+  changedAt: datetime
+  fromStatus: OrderStatus [0..1]
+  toStatus: OrderStatus
+  comment: string [0..1]
+}
+
+enum OrderStatus <<enumeration>> {
+  NEW — «Нове»
+  IN_PROGRESS — «В роботі»
+  READY — «Готове до видачі»
+  ISSUED — «Видане»
+  CANCELLED — «Скасоване»
+}
+
+enum WorkStatus <<enumeration>> {
+  PLANNED — «Заплановано»
+  IN_PROGRESS — «Виконується»
+  DONE — «Виконано»
+}
+
+enum PartStatus <<enumeration>> {
+  AWAITING — «Очікується»
+  RECEIVED — «Отримано»
+}
+
+enum WorkCategory <<enumeration>> {
+  BODY_KIT — обвіс
+  SUSPENSION — підвіска
+  EXHAUST — вихлоп
+  LIGHTING — освітлення
+  CHIP_TUNING — чип-тюнінг
+  DETAILING — детейлінг
+  OTHER — інше
+}
+
+enum Role <<enumeration>> {
+  MANAGER — Менеджер
+  MASTER — Майстер
+  DIRECTOR — Керівник
+}
+
+Client "1" -right- "0..*" Car : володіє
+Car "1" -right- "0..*" Order : обслуговується за
+Order "1" *-- "1..*" WorkItem : містить
+Order "1" *-- "1..*" StatusChange : історія статусів
+WorkItem "1" *-- "0..*" Part : потребує
+WorkItem "0..*" -right- "0..1" Employee : виконавець
+Employee "1" -right- "0..*" StatusChange : автор зміни
+
+Part -[hidden]down- PartStatus
+Part -[hidden]down- WorkStatus
+Employee -[hidden]down- WorkCategory
+StatusChange -[hidden]down- Role
+WorkItem -[hidden]down- OrderStatus
+@enduml
