@@ -65,7 +65,6 @@ next-env.d.ts
 *.db
 *.db-shm
 *.db-wal
-backend/src/TuningShop.Api/data/
 backend/src/TuningShop.Api/wwwroot/
 
 # Release packages (attached to GitHub Release, not committed)
