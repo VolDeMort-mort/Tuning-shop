@@ -61,6 +61,16 @@ next-env.d.ts
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
 
+# Local SQLite databases and generated client bundle
+*.db
+*.db-shm
+*.db-wal
+backend/src/TuningShop.Api/data/
+backend/src/TuningShop.Api/wwwroot/
+
+# Release packages (attached to GitHub Release, not committed)
+artifacts/
+
 # Local Configuration (prevents committing local DB connections)
 appsettings.Development.json
 appsettings.Local.json
@@ -71,3 +81,7 @@ appsettings.Local.json
 .DS_Store
 *.pem
 Thumbs.db
+# Acceptance run (e2e): dependencies and screenshots stay local; protocols are committed
+e2e/node_modules/
+e2e/results/screenshots/
+e2e/results/last-run.json

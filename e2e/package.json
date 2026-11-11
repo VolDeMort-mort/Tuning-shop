@@ -1,0 +1,12 @@
+{
+  "name": "tuning-shop-acceptance",
+  "private": true,
+  "type": "module",
+  "description": "Приймальний прогін v1.0 через веб-інтерфейс (ЛР №4, крок 5.5)",
+  "scripts": {
+    "acceptance": "node acceptance.mjs"
+  },
+  "devDependencies": {
+    "playwright-core": "1.49.1"
+  }
+}
